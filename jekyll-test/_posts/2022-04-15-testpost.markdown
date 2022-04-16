@@ -1,0 +1,6 @@
+---
+layout: post
+date: 2022-04-15
+---
+<img alt="NASA photo" href="~/images/NASA-Photo.jpg">
+![NASA photo](/images/NASA-Photo.jpg)
