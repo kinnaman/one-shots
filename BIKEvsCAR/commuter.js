@@ -5,7 +5,7 @@
 // Variables
 var distance;
 var daysPerweek = 5;
-var gasPrice; // https://www.eia.gov/petroleum/gasdiesel/inclu    des/gas_diesel_rss.xml
+var gasPrice; // https://www.eia.gov/petroleum/gasdiesel/includes/gas_diesel_rss.xml
 
 var car = {
 	type: undefined, //get html of car choice
