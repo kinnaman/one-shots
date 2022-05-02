@@ -2,73 +2,17 @@
 <html lang="en">
 	<head>
 		<title>Commuting Calculator</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		<h1>Simple Commuter Calculator</h1>
-		<!-- set up accordian for the two -->
-		<!--
-	  <table class="table">
-	  <thead>
-	  <tr>
-	  <th scope="col">Variable</th>
-	  <th scope="col">Value</th>
-	  </tr>
-	  </thead>
-	  <tbody>
-	  <tr>
-	  <th scope="row">#</th>
-	  <td> ~ </td>
-	  </tr>
-	  <tr>
-	  <th scope="row">#</th>
-	  <td> ~ </td>
-	  </tr>
-	  <tr>
-	  <th scope="row">#</th>
-	  <td> ~ </td>
-	  </tr>
-	  <tr>
-	  <th scope="row">#</th>
-	  <td> ~ </td>
-	  </tr>
-	  <tr>
-	  <th scope="row">#</th>
-	  <td> ~ </td>
-	  </tr>
-	  <tr>
-	  <th scope="row">#</th>
-	  <td> ~ </td>
-	  </tr>
-	  </tbody>
-	  </table>
-		-->
 		<h4>Car Information Form</h4>
 		<!-- Variables: distance, daysPerWork, gasPrice, car.type, car.mpg, car.insurance, commute.time -->
-		<form action="/action_page.php" novalidate="">
-			<label for="email">Enter your email:</label>
-			<input type="email" id="email" name="email"><br><br>
-			<input type="submit">
-		</form>
-
-
-		<h4>Alternative Commuting Form</h4>
-		<!-- Make it so the inputs only show if selected forms of transportation -->
-		<form>
-			<div class="form-group">
-				<label for="exampleInputEmail1">Email address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Password</label>
-				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-			</div>
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				<label class="form-check-label" for="exampleCheck1">Check me out</label>
-			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-
+		<label for="distanceInput">Enter your commute distance in miles:</label>
+		<input  type="number" min="0" id="distanceInput" placeholder="0" onchange="results()"/><br><br>
+		<input type="submit" onchange="results()"/>
+		<p id="output"></p>
 		<script src="commuter.js"></script>
-		</body></html>
+	</body>
+</html>
+<!-- onkeyup="result() -->
