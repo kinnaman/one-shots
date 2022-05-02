@@ -4,22 +4,19 @@
  * About:	This program calculates commuting costs.
  */
 
-// Includes
-// find out how to get element from rss feed
-
 // element ids set as variables 
-var distance = document.getElementById("distanceInput");
-var output = document.getElementById("output");
-//var workDays = document.getElementById("workDays").value;
-
-var gasPrice = document.getElementsByName("gasPrice").value;
-// https://www.eia.gov/petroleum/gasdiesel/includes/gas_diesel_rss.xml
+var distanceId		= document.getElementById("distanceInput");
+var output 			= document.getElementById("output");
+var carTypeId 		= document.getElementById("carType");
+var mpgId 			= document.getElementById("mpg");
+var gasId			= document.getElementsByName("gasPrice"); // https://www.eia.gov/petroleum/gasdiesel/includes/gas_diesel_rss.xml
+var insuranceId	= document.getElementById("insurance");
+var timeId			= document.getElementById("time");
 
 function results() {
-	//var distance = document.getElementById("distanceInput").value;
-	output.innerHTML = "hi your distance is "+ distance.value;
-	console.log(distance.value);
-	console.log("sup");
+	//output.innerHTML = "some text"+ distanceId.value;
+	//console.log(car.mpg);
+	console.log(distanceId.value);
 }
 
 // Tires, maintenance, repair, per mile according to AAA in cents
@@ -32,12 +29,12 @@ var wearPickup 		= 22.21;
 var wearHybrid 		= 12.58;
 var wearElectric 		= 10.23;
 
-
+/*
 var car = {
-	type: undefined, //get html of car choice
-	mpg: undefined,
-	insurance: undefined,
-	time: undefined,
+	type: 		carTypeId.value,
+	mpg: 			mpgId.value,
+	insurance: 	insuranceId.value,
+	time: 		timeId.value,
 	maintenance: function(){
 		switch(this.type){
 			case "small sedan": 	return wearSmallSedan;	
@@ -51,6 +48,8 @@ var car = {
 		}
 	}
 };
+
+*/
 
 /*
 var bicycle = {
