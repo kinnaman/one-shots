@@ -12,14 +12,21 @@
 		<!-- Variables: distance, daysPerWork, gasPrice, car.type, car.mpg, car.insurance, commute.time -->
 		
 
-		<label for="distanceInput">Commute distance in miles:</label>
-		<input  type="number" min="0" id="distanceInput" placeholder="0" onchange="results()"/><br><br>
+		<label for="distance">Commute distance in miles:</label>
+		<input  type="number" min="0" id="distance" placeholder="0" onchange="results()"/><br><br>
 							
-		<label for="BLANK">BLANK</label>
-		<input  type="BLANK" min="0" id="BLANK" placeholder="BLANK" onchange="results()"/><br><br>
-	
-		<label for="BLANK">BLANK</label>
-		<input  type="BLANK" min="0" id="BLANK" placeholder="BLANK" onchange="results()"/><br><br>
+		<label for="carType">Please select your car type: </label>
+		<select id="carType" onchange="results()">
+			<option value="small sedan">Small sedan</option>
+			<option value="medium sedan">Medium sedan</option>
+			<option value="large sedan">Large sedan</option>
+			<option value="small suv">Small SUV</option>
+			<option value="medium suv">Medium SUV</option>
+			<option value="pickup">Truck</option>
+			<option value="hybrid">Hybrid</option>
+			<option value="electric">Electric</option>
+		</select>
+		<br><br>
 	
 		<label for="BLANK">BLANK</label>
 		<input  type="BLANK" min="0" id="BLANK" placeholder="BLANK" onchange="results()"/><br><br>
