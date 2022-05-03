@@ -27,22 +27,25 @@
 			<option value="electric">Electric</option>
 		</select>
 		<br><br>
+
+      <!-- Hide if electric vehicle is selected -->
+		<label for="mpg">Enter your car's mpg: </label>
+		<input  type="number" min="0" id="mpg" placeholder="0" onchange="results()"/><br><br>
 	
-		<label for="BLANK">BLANK</label>
-		<input  type="BLANK" min="0" id="BLANK" placeholder="BLANK" onchange="results()"/><br><br>
+		<label for="gasPrice">Price of a gallon of gas: </label>
+		<input  type="number" min="0" id="gasPrice" placeholder="0" onchange="results()"/><br><br>
 	
-		<label for="BLANK">BLANK</label>
-		<input  type="BLANK" min="0" id="BLANK" placeholder="BLANK" onchange="results()"/><br><br>
+		<label for="insurance">Monthly cost of vehicle insurrance: </label>
+		<input  type="number" min="0" id="insurance" placeholder="0" onchange="results()"/><br><br>
 	
-		<label for="BLANK">BLANK</label>
-		<input  type="BLANK" min="0" id="BLANK" placeholder="BLANK" onchange="results()"/><br><br>
+		<label for="time">Enter commute time in minutes: </label>
+		<input  type="number" min="0" id="time" placeholder="0" onchange="results()"/><br><br>
 	
-		<label for="BLANK">BLANK</label>
-		<input  type="BLANK" min="0" id="BLANK" placeholder="BLANK" onchange="results()"/><br><br>
-	
-		<label for="BLANK">BLANK</label>
-		<input  type="BLANK" min="0" id="BLANK" placeholder="BLANK" onchange="results()"/><br><br>
-		<input type="submit" value="Submit" onchange="results()"/>
+		<label for="workdays">Enter # of workdays out of the week you will be commuting: </label>
+		<input  type="number" min="0" id="workdays" placeholder="5" onchange="results()"/><br><br>
+
+      <!-- If graphics are added, making updates only occur on submit will help with webpage performance -->
+      <input type="submit" value="Submit" onchange="results()"/>
 			
 	
 		<p id="output"></p>
