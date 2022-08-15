@@ -1,0 +1,19 @@
+{
+  "name": "particles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "particles.js": "^2.0.0",
+    "tsparticles-engine": "^2.0.6",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
